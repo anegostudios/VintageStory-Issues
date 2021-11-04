@@ -8,9 +8,9 @@ assignees: ''
 ---
 
 **Game Version:** X.Y.Z  
-**Platform:** Windows / Mac / Linux (which?)
-**Modded:** No / Yes (which?)
-**SP/MP:** Singleplayer / Multiplayer (which?)
+**Platform:** Windows / Mac / Linux (which?)   
+**Modded:** No / Yes (which?)  
+**SP/MP:** Singleplayer / Multiplayer (which?)  
 
 ### Description
 Explain the issue you're running into.
