@@ -1,0 +1,77 @@
+name: Bugreport
+description: You can report a vanilla bug or issue here.
+labels: ["status: new"]
+
+body:
+  - type: input
+    id: shortdescription
+    attributes:
+      label: Game Version
+      description: What Game Version where you using?
+      placeholder: v1.17.9
+    validations:
+      required: false
+  - type: dropdown
+    id: operating-systems
+    attributes:
+      label: Platform
+      description: Select your operating system.
+      options:
+        - Windows
+        - Mac
+        - Linux
+    validations:
+      required: false
+  - type: dropdown
+    id: modded
+    attributes:
+      label: Modded
+      description: Did you use mods.
+      options:
+        - Modded
+        - Vanilla
+    validations:
+      required: false
+  - type: dropdown
+    id: playmode
+    attributes:
+      label: SP/MP
+      description: Single- or Multiplayer
+      options:
+        - Singleplayer
+        - Multiplayer
+    validations:
+      required: false
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Explain the issue you're running into.
+      placeholder: Explain it here.
+    validations:
+      required: false
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: How to reproduce
+      description: Explain how we could reproduce your bug/issue.
+      placeholder: 1. Make a '....' 2. Use it on '....' 3. It crashes / doesn't do the thing.
+    validations:
+      required: false
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: Attach a screenshot if it helps explain the issue / shows a visual bug.
+      placeholder: Drag and drop pictures here.
+    validations:
+      required: false
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: In the game's Logs folder you may be able to find more information inside client-main.txt and server-main.txt. Alternatively, you may use gist.github.com to upload logs, linking them here, if they're too large.
+      placeholder: Paste crash between the triple backticks.
+      value: "```Log```"
+    validations:
+      required: false
