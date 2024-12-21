@@ -70,8 +70,8 @@ body:
     id: logs
     attributes:
       label: Logs
-      description: In the game's Logs folder you may be able to find more information inside client-main.txt and server-main.txt. Alternatively, you may use gist.github.com to upload logs, linking them here, if they're too large.
-      placeholder: Paste crash between the triple backticks.
-      value: "```Log```"
+      description: In the game's `Logs` folder there will be useful information inside `client-main.log` and `server-main.log`. Please drag and drop those log files here. (For purely visual issues this may not be necessary.) In Multiplayer, we likely need to see the `client-main.log` if you're the player reporting the issue, or the `server-main.log` if you're the server owner. For crashes, `client-crash.log` may be useful. For missing / corrupt worldgen, `server-worldgen.log`.
+      placeholder: Paste crash between the triple backticks. Or drag and drop full log files here. Or both...
+      value: "```Crash report```"
     validations:
       required: false
