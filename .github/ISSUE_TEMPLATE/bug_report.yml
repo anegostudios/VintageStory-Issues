@@ -8,7 +8,7 @@ body:
     attributes:
       label: Game Version
       description: What Game Version where you using?
-      placeholder: v1.17.9
+      placeholder: v1.19.0
     validations:
       required: false
   - type: dropdown
@@ -26,7 +26,7 @@ body:
     id: modded
     attributes:
       label: Modded
-      description: Did you use mods.
+      description: Did you use mods?
       options:
         - Modded
         - Vanilla
@@ -36,7 +36,7 @@ body:
     id: playmode
     attributes:
       label: SP/MP
-      description: Single- or Multiplayer
+      description: Single- or Multi-player?
       options:
         - Singleplayer
         - Multiplayer
@@ -69,9 +69,11 @@ body:
   - type: textarea
     id: logs
     attributes:
-      label: Logs
-      description: In the game's `Logs` folder there will be useful information inside `client-main.log` and `server-main.log`. Please drag and drop those log files here. (For purely visual issues this may not be necessary.) Please provide both logs - or in Multiplayer, we likely only need to see the `client-main.log` if you're the player reporting the issue, or the `server-main.log` if you're the server owner. For crashes, `client-crash.log` may be useful. For missing / corrupt worldgen, `server-worldgen.log`.<br><br>If you re-started the game already after the issue occurred, your older logs are in folder `Logs\Archive`.<br><br>In the event of a crash please also copy & paste the information from the Crash Reporter screen, paste it between the triple quote marks in the box below. This helps us quickly find the issue, and may help other players with the same issue.
+      label: Logs (Required)
+      description: In the game's `Logs` folder there will be useful information in almost all cases.  For the gameplay session when the issue occurred, please drag and drop all those log files here, in every case. Please provide both server- and client- logs - or in Multiplayer, you will only have access to client- logs if you're the player reporting the issue.  If you're the server owner, post server- logs and if relevant please try to obtain the client logs from the affected player as well.<br><br>If you re-started the game already after the issue occurred, your older logs are in folder `Logs\Archive`.<br><br>In the event of a crash please also copy & paste the information from the Crash Reporter screen, paste it between the triple quote marks in the box below. This helps us quickly find the issue, and may help other players with the same issue.
       placeholder: Paste crash between the triple backticks. Or drag and drop full log files here. Or both.
-      value: "```Crash```"
+      value: "Log files are now required in all cases (unless it's a website issue)
+      
+      You can also cut and paste from any crash report here: ```Crash```"
     validations:
-      required: false
+      required: true
