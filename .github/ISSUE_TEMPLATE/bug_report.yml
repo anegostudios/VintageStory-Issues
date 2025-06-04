@@ -71,9 +71,10 @@ body:
     attributes:
       label: Logs (Required)
       description: In the game's `Logs` folder there will be useful information in almost all cases.  For the gameplay session when the issue occurred, please drag and drop **all** those log files here. Please provide both server- and client- logs - or in Multiplayer, you will only have access to client- logs if you're the player reporting the issue.  If you're the server owner, post server- logs and if relevant please try to obtain the client logs from the affected player as well.<br><br>If you re-started the game already after the issue occurred, your older logs are in folder `Logs\Archive`.<br><br>In the event of a crash please also copy & paste the information from the Crash Reporter screen, paste it between the triple quote marks in the box below. This helps us quickly find the issue, and may help other players with the same issue.
-      placeholder: Paste crash between the triple backticks. Or drag and drop full log files here. Or both.
+      placeholder: Paste crash between the triple backticks. Also drag and drop full log files here.
       value: "Log files are now required in all cases (unless it's a website issue)
       
-      You can also cut and paste from any crash report here: ```Crash```"
+      You can also cut and paste from any crash report here:
+      ```Crash```"
     validations:
       required: true
