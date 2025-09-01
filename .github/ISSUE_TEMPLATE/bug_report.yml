@@ -1,5 +1,5 @@
 name: Bugreport
-description: You can report a vanilla bug or issue here.  Before starting, it is worth searching to see if your issue has already been reported. Search both Open *and* Closed issues. If it's in Closed issues, maybe it is already resolved or resolvable. Especially with crashes, unique words or code from the first couple of lines can be fruitful to search for: a good one to search is the last word before (.
+description: You can report a vanilla bug or issue here.  Before starting, it is worth searching to see if your issue has already been reported. Search both Open *and* Closed issues. If it's in Closed issues, maybe it is already resolved or resolvable. Especially with crashes, unique words or code from the first couple of lines can be fruitful to search for: a good one to search is the last word before \(.
 labels: ["status: new"]
 
 body:
