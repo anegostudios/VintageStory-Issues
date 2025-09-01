@@ -74,7 +74,7 @@ body:
       placeholder: Paste crash between the triple backticks. Also drag and drop full log files here - especially `client-main.log`
       value: "Log files are now required in all cases (unless it's a website issue)
       
-      You can also cut and paste from any crash report here:
+      You can drag and drop log files here, you can also cut and paste from any crash report here:
       ```Crash```"
     validations:
       required: true
