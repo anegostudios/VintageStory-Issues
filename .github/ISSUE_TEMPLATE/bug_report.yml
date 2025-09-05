@@ -47,7 +47,7 @@ body:
     attributes:
       label: Description
       description: Explain the issue you're running into.
-      placeholder: Explain it here.
+      placeholder: Explain it here. Make sure to include any troubleshooting steps you already did.
     validations:
       required: false
   - type: textarea
