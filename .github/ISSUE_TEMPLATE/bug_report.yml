@@ -1,5 +1,5 @@
 name: Bugreport
-description: You can report a bug or issue here.  Before starting, it is worth searching to see if your issue has already been reported. Search both Open *and* Closed issues
+description: You can report a vanilla bug or issue here.  Before starting, it is worth searching to see if your issue has already been reported. Search both Open *and* Closed issues
 labels: ["status: new"]
 
 body:
@@ -8,15 +8,7 @@ body:
     attributes:
       label: Game Version
       description: What Game Version were you using?
-      placeholder: v1.22
-    validations:
-      required: false
-  - type: input
-    id: shortdescription
-    attributes:
-      label: Mod Version
-      description: What Mod Version of Attribute Rendering Library were you using?
-      placeholder: v3.0.0-pre.8
+      placeholder: v1.20.
     validations:
       required: false
   - type: dropdown
@@ -28,6 +20,16 @@ body:
         - Windows
         - Mac
         - Linux
+    validations:
+      required: false
+  - type: dropdown
+    id: modded
+    attributes:
+      label: Modded
+      description: Did you use mods?
+      options:
+        - Modded
+        - Vanilla
     validations:
       required: false
   - type: dropdown
@@ -46,14 +48,6 @@ body:
       label: Description
       description: Explain the issue you're running into.
       placeholder: Explain it here.
-    validations:
-      required: false
-  - type: textarea
-    id: modlist
-    attributes:
-      label: Modlist
-      description: List all mods that you were using when this issue happened.
-      placeholder: Paste modlist here.
     validations:
       required: false
   - type: textarea
@@ -80,9 +74,7 @@ body:
       placeholder: Paste crash between the triple backticks. Also drag and drop full log files here - especially `client-main.log`
       value: "Log files are now required in all cases (unless it's a website issue)
       
-      You can drag and drop log files here.
-      
       You can drag and drop log files here, you can also cut and paste from any crash report here:
-      \n```\nCrash\n```"
+      ```Crash```"
     validations:
       required: true
